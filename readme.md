@@ -1,6 +1,37 @@
 # LLAMA Prompt
 Um projeto feito para facilitar a criação de prompts
 
+## Requisitos
+Para rodar o projeto é necessário possuir um servidor LLAMA.cpp rodando localmente. Siga os passos abaixo:
+
+* Baixe a lib referente a seu sistema operacional no repositório do [llama.cpp](https://github.com/ggerganov/llama.cpp/releases). Para Windos recomendo usar o [clblast](https://github.com/ggerganov/llama.cpp/releases/download/b2581/llama-b2581-bin-win-clblast-x64.zip), após isso siga o passo a passo de preparação. E para configurar no LINUX siga o tutorial abaixo.
+
+### Preparando ambiente no Linux
+```bash
+# Clone o repositorio do llama cpp	
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp
+
+# Realize a build com o CMake
+make
+
+# Execute o servidor
+./server -m ./models/llama-2-7b-chat.Q5_K_M.gguf -c 2048
+```
+
+### Preparando ambiente no Windows
+```bash
+# Entre na pasta baixada do clblast
+...
+
+# Abra o terminal (NA PASTA) e execute o comando
+server.exe -m .\models\llama-2-7b-chat.Q5_K_M.gguf -c 2048
+```
+
+### Inserindo modelo generativo
+Para inserir um modelo generativo, basta baixar o modelo na seguinte [pasta do drive](https://drive.google.com/file/d/1-4s0l3PEe2PXXWktnMMZnIlgl4rQDqzj/view?usp=sharing), e insira o arquivo baixado em uma pasta chamada `models` na pasta do llama.cpp.
+
+## Instalação
 ```bash
 git clone https://github.com/LearXD/llama-prompt
 cd llama-prompt
