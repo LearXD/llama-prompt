@@ -34,7 +34,7 @@ Caso você possua um arquivo variaveis.json na pasta configs com o seguinte cont
 
 E um arquivo prompt.txt na pasta prompts com o seguinte conteúdo:
 ```txt
-Olá, meu nome é ${nome} e tenho ${idade} anos
+Olá, meu nome é {nome} e tenho {idade} anos
 ```
 
 Ao rodar o comando:
