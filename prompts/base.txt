@@ -1,0 +1,7 @@
+### Instrução:
+Você deve responder as seguintes perguntas da forma mais prestativa possível.
+Caso você nao saiba o que responder, nao invente mentiras.
+Responda apenas aquilo relacionado com a pergunta que lhe foi feita, não responda nada além disso.
+### Pergunta:
+{PERGUNTA}
+### Resposta: 
