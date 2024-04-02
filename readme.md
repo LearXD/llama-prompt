@@ -13,24 +13,22 @@ cd llama.cpp
 
 # Realize a build com o CMake
 make
-
-# Execute o servidor
-./server -m ./models/llama-2-7b-chat.Q5_K_M.gguf -c 2048
 ```
-
 ### Preparando ambiente no Windows
-Para Windos recomendo usar o [clblast](https://github.com/ggerganov/llama.cpp/releases/download/b2581/llama-b2581-bin-win-clblast-x64.zip). Baixe e extraia o arquivo baixado, e siga os passos abaixo:
-
-```bash
-# Entre na pasta baixada do clblast
-...
-
-# Abra o terminal (NA PASTA) e execute o comando
-server.exe -m .\models\llama-2-7b-chat.Q5_K_M.gguf -c 2048
-```
+Para Windows recomendo usar a arquitetura [clblast](https://github.com/ggerganov/llama.cpp/releases/download/b2581/llama-b2581-bin-win-clblast-x64.zip). Baixe e extraia o arquivo baixado, após isso siga os passos abaixo:
 
 ### Inserindo modelo generativo
-Para inserir um modelo generativo, basta baixar o modelo na seguinte [pasta do drive](https://drive.google.com/file/d/1-4s0l3PEe2PXXWktnMMZnIlgl4rQDqzj/view?usp=sharing), e insira o arquivo baixado em uma pasta chamada `models` na pasta do llama.cpp.
+Para inserir um modelo generativo, basta baixar o modelo na seguinte [pasta do drive](https://drive.google.com/file/d/1-4s0l3PEe2PXXWktnMMZnIlgl4rQDqzj/view?usp=sharing), e insira o arquivo baixado em uma pasta chamada `models` (se nao existir, crie uma) na pasta do llama.cpp.
+
+### Executando o servidor LLAMA.cpp
+Certifique de estar dentro da pasta do llama.cpp, e execute o comando abaixo:
+```bash
+# Linux
+./server -m ./models/llama-2-7b-chat.Q5_K_M.gguf -c 2048
+
+# Windows
+server.exe -m .\models\llama-2-7b-chat.Q5_K_M.gguf -c 2048
+```
 
 ## Instalação
 ```bash
